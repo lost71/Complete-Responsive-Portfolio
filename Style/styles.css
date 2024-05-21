@@ -8,4 +8,41 @@
     border: none; /* Adicionado "none" para a propriedade border */
     outline: none; /* Adicionado "none" para a propriedade outline */
 }
-:root
+:root {
+    --bg-color: #191f36;
+    --snd-bg-color: #262840;
+    --text-color: #fff;
+    --main-color: #5982f4;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 0%;
+    background: var(--bg-color);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: default;
+}
